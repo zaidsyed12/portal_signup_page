@@ -1,0 +1,242 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/******************/
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; 
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.left-section {
+    width: 50%;
+    padding-top: 7.5%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.signup-login {
+    padding: 20px; 
+}
+
+.right-section {
+    width: 50%;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    min-width: 238px;
+    padding: 0 10px;
+}
+
+.title {
+    font-size: 35px;
+    color: #4a9cdf;
+    margin-bottom: 10px;
+}
+
+.input-field {
+    width: 100%;
+    height: 50px;
+    background: #f0f0f0;
+    margin: 10px 0;
+    border: 2px solid #4a9cdf;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.input-field i {
+    flex: 1;
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+
+}
+
+.input-field input{
+    flex: 5;
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: #444;
+}
+
+.btn {
+    border-radius: 50px;
+    background: none;
+    border: none;
+    background: #4a9cdf;
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    font-weight: 600;
+    margin: 10px 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #0882e5;
+}
+
+.social-text {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.social-text-a {
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.social-text-a button {
+    border: none;
+    background: none;
+    color: #4a9cdf;
+}
+
+.social-text-a button:hover {
+    color: #0882e5;
+    cursor: pointer;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #444;
+    border: 1px solid #444;
+    border-radius: 50px;
+    margin: 0 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #0882e5;
+    border-color: #0882e5;
+}
+
+.image-section {
+    min-height: 100vh;
+    background-image: url('icons/library_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section h3 {
+    font-size: 2rem; 
+    margin-bottom: 10px;
+}
+
+.image-section p {
+    font-size: 1rem; 
+    text-align: center; 
+}
+
+.link a {
+    color: #4a9cdf; 
+    text-decoration: underline; 
+}
+
+.link a:hover {
+    color: #0882e5; 
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+    }
+
+    .signup-login {
+        width: 80%; 
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .image-section {
+        min-height: 50vh; 
+    }
+}
